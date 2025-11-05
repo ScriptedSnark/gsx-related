@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ScriptedSnark/gsx-related/refs/heads/main/updater/manifest.json
