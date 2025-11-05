@@ -1,0 +1,11 @@
+{
+  "branches": [
+    {
+      "name": "plus",
+      "version": "1.2.1-plus",
+      "changelog": "v1.2.1 (plus)\n\nEngine:\n- Reverted FastDL bugfix (fixed connect loop)\n- Fixed some BSP background issues",
+      "size": 4827592,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.2.1-plus/gsp-branch-plus.zip"
+    }
+  ]
+}
