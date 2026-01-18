@@ -2,10 +2,10 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.3.0-plus",
-      "changelog": "v1.3.0 (plus)\n\nGlobal:\n- Moved to more fixed/accurate codebase\n- Added Linux support\n\nEngine:\n- Fixed heap corruption (crash) when lagging too much\n- GL: Added `-nomtex` parameter to disable multitexture extension (boosts FPS)\n- Added timeout print to the \"WARNING: Connection Problem\" message\n- GL: Restored `gl_picmip` functionality\n- Now `version` prints correct build number\n\nLauncher:\n- Now launcher checks if updater.exe exists\n\nServerBrowser:\n- Removed blacklist by server name\n\nGameUI:\n- Removed PNG backgrounds (will be reimplemented later)\n- Allowed console to exist with loading dialog\n- Fixed background render state not resetting on disconnect",
-      "size": 4110477,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.3.0-plus/gsx-win32-1.3.0-plus.zip"
+      "version": "1.3.1-plus",
+      "changelog": "v1.3.1 (plus)\n\nEngine:\n- Restored EAX support (can be enabled with dsoal DLL wrapper)\n\nDemoPlayer:\n- DemoPlayer is distributed from now (Win32/Linux)\n\n- Applied ReHLDS fixes\n\nCore:\n- Core is distributed from now (Win32/Linux)\n- Applied ReHLDS fixes\n- Increased MAX_ENTITIES limit to 2048 (fixed viewdemo crash)",
+      "size": 4357339,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.3.1-plus/gsx-win32-1.3.1-plus.zip"
     }
   ]
 }
