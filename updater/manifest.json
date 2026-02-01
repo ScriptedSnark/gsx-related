@@ -2,10 +2,10 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.3.1-plus",
-      "changelog": "v1.3.1 (plus)\n\nEngine:\n- Restored EAX support (can be enabled with dsoal DLL wrapper)\n\nDemoPlayer:\n- DemoPlayer is distributed from now (Win32/Linux)\n\n- Applied ReHLDS fixes\n\nCore:\n- Core is distributed from now (Win32/Linux)\n- Applied ReHLDS fixes\n- Increased MAX_ENTITIES limit to 2048 (fixed viewdemo crash)",
-      "size": 4357339,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.3.1-plus/gsx-win32-1.3.1-plus.zip"
+      "version": "1.3.2-plus",
+      "changelog": "v1.3.2 (plus)\n\nGlobal:\n- Linux: Debug symbols are restored from now\n\nEngine:\n- Linux: Fixed save incompatibility\n- Linux: Removed RTLD_DEEPBIND from FS_LoadLibrary\n- Windows: Fix converting Linux names in save file\n\nGameUI:\n- Added map column in load/save game dialog\n- Added \"UNTITLED SAVE\" title for saves without comments\n- Made possible to speed up/slow down demos to 8x, 1/8x\n- Fixed demo UI slider showing invalid time range\n\nVGUI2:\n- Linux: Implemented various platform stuff with SDL2\n\nCore (HLTV):\n- Fixed intermission crash (ReHLDS fix)",
+      "size": 4358363,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.3.2-plus/gsx-win32-1.3.2-plus.zip"
     }
   ]
 }
