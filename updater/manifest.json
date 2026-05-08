@@ -2,10 +2,10 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.4.1-plus",
-      "changelog": "v1.4.1 (plus)\n\nLinux:\n- Fixed `_restart` crash by implementing new engine restart method\n- Supported dedicated server engine build (engine_i486.so)\n\nEngine:\n- Fixed out of bounds access in SV_CreateResourceList (sound precache crash)\n- Fixed another heap corruption during svc_deltapacketentities parsing with bad connection\n- Added `unalias`, `unaliasall` commands\n- Added `cl_showpos` cvar\n\nServerBrowser:\n- Applied some fixes to multigamedir feature",
-      "size": 4929539,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.4.1-plus/gsx-win32-1.4.1-plus.zip"
+      "version": "1.4.2-plus",
+      "changelog": "v1.4.2 (plus)\n\nEngine:\n- Software: Fixed R_LoadTGA so even taskbar icon will be correct\n- Fixed another heap corruption during bad internet connection\n- Reverted SDL input changes, now you need `-userawinput` for 3rd-party mods\n- Reverted keydown check to fix OpenAG input\n- Added \"fit\" token support for background layout\n\nGameUI:\n- Applied HL25 changes for DrawBackgroundImage\n\nServerBrowser:\n- Ignored \"type\" key while parsing mod list",
+      "size": 4930635,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.4.2-plus/gsx-win32-1.4.2-plus.zip"
     }
   ]
 }
