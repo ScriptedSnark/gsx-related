@@ -9,10 +9,10 @@
     },
     {
       "name": "sunfire",
-      "version": "1.5.0-sunfire",
+      "version": "1.5.1-sunfire",
       "changelog": "None",
-      "size": 8333848,
-      "browser_download_url": "http://38.180.60.128/gsx_artifacts/gsx-win32-1.5.0-sunfire.zip"
+      "size": 8334400,
+      "browser_download_url": "http://38.180.60.128/gsx_artifacts/gsx-win32-1.5.1-sunfire.zip"
     }
   ]
 }
