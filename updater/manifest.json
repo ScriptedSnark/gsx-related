@@ -2,17 +2,21 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.5.0-plus",
-      "changelog": "v1.5.0 (plus)\n\nGlobal:\n- All GSX resource files are now located in `valve_gsx` directory\n- steam_legacy requirement is no longer necessary\n\nEngine:\n- Added `-borderless` alias for `-noborder`\n- Added internal `FCVAR_READONLY` flag\n- Added read-only gsx_version cvar\n- Added Discord Rich Presence integration (supports all official games + AG)\n- Added Steam Rich Presence integration (available with specific clients)\n- Added `-lang` launch argument for language forcing (ex. `-lang japanese`)\n- Added `_gsx` search path as primary basedir/another addon directory\n- Added support for `UseScaledCreditsFont` resource string\n- Software: implemented \"fit\" option for startup graphic\n- Implemented workaround for svc_bad in demos (active with `developer 1`)\n- Reverted `-userawinput` launch argument (no need anymore)\n- Fixed SystemWrapper command forwarder (fixes dem_ commands)\n- Disabled keyboard input for GameUI panels during active Quake/WON console\n- Now skybox updates in runtime when `sv_skyname` changes on server-side\n- Allowed `r_dynamic` in multiplayer\n\nGameUI:\n- All GameUI dialogs were scaled with HD proportional feature from HL25\n- Implemented fallback for HD background loading\n\nSteam API:\n- Upgraded to v156 (HL25)\n\nServerBrowser:\n- Added country flags before server name\n- Fixed \"last time played\" string construction\n- Fixed inability to activate game filter with uppercase mod name (gamedir)\n- Fixed inability to activate game filter with same string start (ex. czero, czeror)\n- Fixed gamedir filter in filter string \n- Current game will be added in any case in game filter\n- Reduced server refresh interval from 10s to 600ms\n\nVGUI2:\n- Fixed scheme reloading in runtime\n- Implemented HD proportional scaling like in HL25 build\n- Implemented `-nohdproportional` launch argument",
-      "size": 8333076,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.5.0-plus/gsx-win32-1.5.0-plus.zip"
+      "version": "1.6.0-plus",
+      "changelog": "v1.6.0 (plus)\n\nGlobal:\n- Added turkish localization (thanks to [BLUEStrike5K](https://www.youtube.com/@BLUEStrike5K/featured))\n\nLinux:\n- **Upgraded gcc from 4.8 to 9**\n- Added updater support (going to publish later)\n- Added TrackerUI (friends) support\n- Added custom master server support\n- Implemented SDL2 surface backend for VGUI2\n- Enabled Discord Rich Presence\n- Fixed stack smashing in font texture cache\n- Fixed memory issues in `CLinuxFont`\n\nEngine:\n- Added `-picmip` launch argument to restore gl_picmip functionality\n- Added PNG backgrounds (again, resource/background.png)\n- Implemented SDR (Steam Datagram Relay) networking from HL25\n- Implemented `cl_ticket_generator` (from [Xash3D FWGS](https://github.com/FWGS/xash3d-fwgs))\n**NOTE: you still need to own GoldSrc game you want to play.**\n- Extended GSX API with `ConsoleColorPrintf` and `DrawSetTextColor`\n- Reimplemented GSX API as an interface (was a struct)\n- Made client CRC check exclusive for Win32\n- config.cfg read-only flag is no longer bypassed\n- Removed TGA texture resolution limit for VGUI2\n- Fixed some EAX reverb related bugs\n- Fixed lightgamma crash in multiplayer\n- Fixed `R_DrawTorus` buffer overrun\n- Fixed non-thread-safe console prints in MP3 system\n- Fixed parsing of `Half-Life_gsx` directory\n- Fixed game window icon orientation (no longer flipped)\n- Fixed several Steam RPC issues\n- Fixed listen server advertising in Steam masterserver\n- Fixed game crash when WinSock error appears\n- Software: Fixed GameUI background gap on the left side\n- Software: Fixed animated logo scaling\n- Software: implemented drawing funcs for ServerBrowser flags\n\nGameUI:\n- Added `gsx_nohdproportional` cvar (replaces `-nohdproportional` launch argument)\n- Added animated logo from HL25\n- Enabled bots dialog for Counter-Strike (still requires ReGameDLL)\n- Reworked launch arguments into a dedicated GSX options dialog (GSX / UI / Renderer / About tabs, STILL WIP)\n- Most GSX options are now applied dynamically via cvars\n- Applied HD proportional scaling to CareerUI\n\nTrackerUI:\n- Added in-game friends/Tracker UI (thanks to @oxiKKK)\n\nServerBrowser:\n- Added custom masterservers support\n- Fixed being unable to copy server's IP\n- Fixed server queries after game restart\n\nVGUI2:\n- Finalized HL25 menu (help text, sounds, additive text draw)\n- Fixed new/delete type mismatch in `ListPanel::DeleteAllItems`\n- Fixed UP direction for system menu",
+      "size": 8723693,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-plus/gsx-win32-1.6.0-plus.zip",
+      "size_linux": 14366492,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-plus/gsx-linux-1.6.0-plus.tar.xz"
     },
     {
-      "name": "sunfire",
-      "version": "1.5.1-sunfire",
-      "changelog": "None",
-      "size": 8334400,
-      "browser_download_url": "http://38.180.60.128/gsx_artifacts/gsx-win32-1.5.1-sunfire.zip"
+      "name": "svengine",
+      "version": "1.6.0-svengine",
+      "changelog": "1.6.0-plus but for Sven Co-op (5.26)",
+      "size": 6876211,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-svengine/gsx-win32-1.6.0-svengine.zip",
+      "size_linux": 10422824,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-svengine/gsx-linux-1.6.0-svengine.tar.xz"
     }
   ]
 }
