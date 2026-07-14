@@ -168,6 +168,26 @@
 		"wrap"		"0"
 		dulltext	1
 	}
+	"MasterFilter"
+	{
+		"ControlName"		"ComboBox"
+		"fieldName"		"MasterFilter"
+		"xpos"		"196"
+		"ypos"		"244"
+		"wide"		"134"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"3"
+		"paintbackground"		"1"
+		"textHidden"		"0"
+		"editable"		"0"
+		"maxchars"		"-1"
+		"NumericInputOnly"		"0"
+		"unicode"		"0"
+	}
 	"GameFilter"
 	{
 		"ControlName"		"ComboBox"
