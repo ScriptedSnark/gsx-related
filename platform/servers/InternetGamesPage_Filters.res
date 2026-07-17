@@ -177,7 +177,7 @@
 		"wide"		"134"
 		"tall"		"24"
 		"AutoResize"		"0"
-		"PinCorner"		"2"
+		"PinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"3"
