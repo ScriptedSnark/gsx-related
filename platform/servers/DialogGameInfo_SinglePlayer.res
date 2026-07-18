@@ -151,10 +151,10 @@
 		"Default"		"0"
 		"SubTabPosition"		"2"
 	}
-	"PlayerList"
+	"GameInfoTabs"
 	{
-		"ControlName"		"ListPanel"
-		"fieldName"		"PlayerList"
+		"ControlName"		"PropertySheet"
+		"fieldName"		"GameInfoTabs"
 		"xpos"		"24"
 		"ypos"		"228"
 		"wide"		"368"
