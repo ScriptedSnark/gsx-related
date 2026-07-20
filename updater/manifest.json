@@ -2,21 +2,21 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.6.0-plus",
-      "changelog": "v1.6.0 (plus)\n\nGlobal:\n- Added turkish localization (thanks to [BLUEStrike5K](https://www.youtube.com/@BLUEStrike5K/featured))\n\nLinux:\n- **Upgraded gcc from 4.8 to 9**\n- Added updater support (going to publish later)\n- Added TrackerUI (friends) support\n- Added custom master server support\n- Implemented SDL2 surface backend for VGUI2\n- Enabled Discord Rich Presence\n- Fixed stack smashing in font texture cache\n- Fixed memory issues in `CLinuxFont`\n\nEngine:\n- Added `-picmip` launch argument to restore gl_picmip functionality\n- Added PNG backgrounds (again, resource/background.png)\n- Implemented SDR (Steam Datagram Relay) networking from HL25\n- Implemented `cl_ticket_generator` (from [Xash3D FWGS](https://github.com/FWGS/xash3d-fwgs))\n**NOTE: you still need to own GoldSrc game you want to play.**\n- Extended GSX API with `ConsoleColorPrintf` and `DrawSetTextColor`\n- Reimplemented GSX API as an interface (was a struct)\n- Made client CRC check exclusive for Win32\n- config.cfg read-only flag is no longer bypassed\n- Removed TGA texture resolution limit for VGUI2\n- Fixed some EAX reverb related bugs\n- Fixed lightgamma crash in multiplayer\n- Fixed `R_DrawTorus` buffer overrun\n- Fixed non-thread-safe console prints in MP3 system\n- Fixed parsing of `Half-Life_gsx` directory\n- Fixed game window icon orientation (no longer flipped)\n- Fixed several Steam RPC issues\n- Fixed listen server advertising in Steam masterserver\n- Fixed game crash when WinSock error appears\n- Software: Fixed GameUI background gap on the left side\n- Software: Fixed animated logo scaling\n- Software: implemented drawing funcs for ServerBrowser flags\n\nGameUI:\n- Added `gsx_nohdproportional` cvar (replaces `-nohdproportional` launch argument)\n- Added animated logo from HL25\n- Enabled bots dialog for Counter-Strike (still requires ReGameDLL)\n- Reworked launch arguments into a dedicated GSX options dialog (GSX / UI / Renderer / About tabs, STILL WIP)\n- Most GSX options are now applied dynamically via cvars\n- Applied HD proportional scaling to CareerUI\n\nTrackerUI:\n- Added in-game friends/Tracker UI (thanks to @oxiKKK)\n\nServerBrowser:\n- Added custom masterservers support\n- Fixed being unable to copy server's IP\n- Fixed server queries after game restart\n\nVGUI2:\n- Finalized HL25 menu (help text, sounds, additive text draw)\n- Fixed new/delete type mismatch in `ListPanel::DeleteAllItems`\n- Fixed UP direction for system menu",
-      "size": 8723693,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-plus/gsx-win32-1.6.0-plus.zip",
-      "size_linux": 14366492,
-      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-plus/gsx-linux-1.6.0-plus.tar.xz"
+      "version": "1.6.1-plus",
+      "changelog": "v1.6.1 (plus)\n\nLinux:\n- Fixed not handling spaces on some VGUI2 labels\n\nEngine:\n- Blocked .ps1/.sh files from downloading\n- Hidden pause pic in Condition Zero career\n\nGameUI:\n- Added Steam networking checkbox with note (thanks to @Armacadia)\n- Added HL25 hostname when creating server (\"Someone's Server\")\n- Fixed broken console color patch for BugfixedHL-Rebased\n\nFriendsUI:\n- Actually deployed on Windows platform, I'm so sorry, guys ;)\n\nServerBrowser:\n- Now server sort happens by country flag (if tapping Name tab)\n- Added AG color tags support\n- Added server rules tab for game info dialog\n- Reworked blacklist tab, now it also accepts plain text of IP:port strings\n- Fixed multiple servers selection\n- Moved master filter to the right side",
+      "size": 9176114,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-plus/gsx-win32-1.6.1-plus.zip",
+      "size_linux": 15534592,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-plus/gsx-linux-1.6.1-plus.tar.xz"
     },
     {
       "name": "svengine",
-      "version": "1.6.0-svengine",
-      "changelog": "1.6.0-plus but for Sven Co-op (5.26)",
-      "size": 6876211,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-svengine/gsx-win32-1.6.0-svengine.zip",
-      "size_linux": 10422824,
-      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.0-svengine/gsx-linux-1.6.0-svengine.tar.xz"
+      "version": "1.6.1-svengine",
+      "changelog": "1.6.1-plus with Svengine protocol support (5.26)",
+      "size": 7328060,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-svengine/gsx-win32-1.6.1-svengine.zip",
+      "size_linux": 11377580,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-svengine/gsx-linux-1.6.1-svengine.tar.xz"
     }
   ]
 }
