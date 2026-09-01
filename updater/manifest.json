@@ -2,21 +2,21 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.6.1-plus",
-      "changelog": "v1.6.1 (plus)\n\nLinux:\n- Fixed not handling spaces on some VGUI2 labels\n\nEngine:\n- Blocked .ps1/.sh files from downloading\n- Hidden pause pic in Condition Zero career\n\nGameUI:\n- Added Steam networking checkbox with note (thanks to @Armacadia)\n- Added HL25 hostname when creating server (\"Someone's Server\")\n- Fixed broken console color patch for BugfixedHL-Rebased\n\nFriendsUI:\n- Actually deployed on Windows platform, I'm so sorry, guys ;)\n\nServerBrowser:\n- Now server sort happens by country flag (if tapping Name tab)\n- Added AG color tags support\n- Added server rules tab for game info dialog\n- Reworked blacklist tab, now it also accepts plain text of IP:port strings\n- Fixed multiple servers selection\n- Moved master filter to the right side",
-      "size": 9176114,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-plus/gsx-win32-1.6.1-plus.zip",
-      "size_linux": 15534592,
-      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-plus/gsx-linux-1.6.1-plus.tar.xz"
+      "version": "1.6.2-plus",
+      "changelog": "v1.6.2 (plus)\n\nSDL:\n- Now GSX uses SDL3 wrapper. Native port to SDL3 is probably not worth it because can break compatibility with HL mods\n\nEngine:\n- Added crash handler\n- Added `-nosdr` launch argument to force disable Steam Networking\n- Added error printing in SDL window creation\n- Added `sv_allow_autoaim` cvar, fixes crash if HL25 game dll is used\n- Fixed TextMsg print crash during demo playback\n- Fixed \"agstart\" problem: basically, game DLL commands don't interrupt your commands on 3rd-party servers\n- Fixed assert in voice system\n- Fixed double RandomLong call in R_BloodSprite\n- Engine won't bring up main menu while watching demo anymore\n- Now engine cleans up command buffer after watching demos\n- Ignored background map in both RPC statuses\n\nGameUI:\n- Now animated logo hides in-game\n- Supported `-nosdr` launch argument\n- Inserted D3D renderer (Win32) placeholder in combobox for future versions\n\nTrackerUI:\n- Distributed necessary .res files to actually be able to disable their sounds (friend join/in-game, etc.)\n\nServerBrowser:\n- Implemented own rules query, fixes Steam assert and steamerrorreporter.exe spawn\n- Added country code column\n- Reverted servers sorting by name\n- Fixed not showing Internet servers (appID being 0 fix, broken by recent Steam client update)\n- Fixed not working \"Refresh all\" button in some cases",
+      "size": 9587573,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.2-plus/gsx-win32-1.6.2-plus.zip",
+      "size_linux": 16891064,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.2-plus/gsx-linux-1.6.2-plus.tar.xz"
     },
     {
       "name": "svengine",
-      "version": "1.6.1-svengine",
-      "changelog": "1.6.1-plus with Svengine protocol support (5.26)",
-      "size": 7328060,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-svengine/gsx-win32-1.6.1-svengine.zip",
-      "size_linux": 11377580,
-      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.1-svengine/gsx-linux-1.6.1-svengine.tar.xz"
+      "version": "1.6.2-svengine",
+      "changelog": "1.6.2-plus with Svengine protocol support (5.26)",
+      "size": 7732784,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.2-svengine/gsx-win32-1.6.2-svengine.zip",
+      "size_linux": 12751872,
+      "browser_download_url_linux": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.6.2-svengine/gsx-linux-1.6.2-svengine.tar.xz"
     }
   ]
 }
