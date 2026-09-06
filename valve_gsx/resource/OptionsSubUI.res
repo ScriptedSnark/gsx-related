@@ -135,4 +135,23 @@
 		"brighttext"		"0"
 		"Default"		"0"
 	}
+	"MultiProgress"
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"MultiProgress"
+		"xpos"		"16"
+		"ypos"		"202"
+		"wide"		"440"
+		"tall"		"24"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"5"
+		"labelText"		"#GSX_MultiProgress"
+		"textAlignment"		"west"
+		"dulltext"		"0"
+		"brighttext"		"0"
+		"Default"		"0"
+	}
 }
