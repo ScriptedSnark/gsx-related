@@ -339,7 +339,7 @@
 		"ControlName"		"CheckButton"
 		"fieldName"		"SoftWater"
 		"xpos"		"258"
-		"ypos"		"248"
+		"ypos"		"240"
 		"wide"		"218"
 		"tall"		"24"
 		"visible"		"1"
@@ -347,5 +347,32 @@
 		"tabPosition"		"13"
 		"labelText"		"#GSX_SoftWater"
 		"textAlignment"		"west"
+	}
+	"SkyTitle"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"SkyTitle"
+		"xpos"		"258"
+		"ypos"		"274"
+		"wide"		"60"
+		"tall"		"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"labelText"		"#GSX_Sky"
+		"textAlignment"		"west"
+	}
+	"Sky"
+	{
+		"ControlName"		"ComboBox"
+		"fieldName"		"Sky"
+		"xpos"		"320"
+		"ypos"		"272"
+		"wide"		"156"
+		"tall"		"24"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"14"
+		"editable"		"0"
 	}
 }
